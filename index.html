@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Cabin" rel="stylesheet">
+    <script type='text/javascript' src='http://code.jquery.com/jquery-latest.js'></script>
+</head>
+<body onload="startGame()">
+    <h1>Tic Tac Toe</h1>
+    <div id="message">It's X's turn.</div>
+
+    <table border="1" id="table">
+        <tr>
+            <td class="square" id="s1" onclick="changeTurn(this)"></td>
+            <td class="square" id="s2" onclick="changeTurn(this)"></td>
+            <td class="square" id="s3" onclick="changeTurn(this)"></td>
+        </tr>
+        <tr>
+            <td class="square" id="s4" onclick="changeTurn(this)"></td>
+            <td class="square" id="s5" onclick="changeTurn(this)"></td>
+            <td class="square" id="s6" onclick="changeTurn(this)"></td>
+        </tr>
+        <tr>
+            <td class="square" id="s7" onclick="changeTurn(this)"></td>
+            <td class="square" id="s8" onclick="changeTurn(this)"></td>
+            <td class="square" id="s9" onclick="changeTurn(this)"></td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="restartGame()">Restart</button>
+    <script src="js/index.js/"></script>
+</body>
+</html>
